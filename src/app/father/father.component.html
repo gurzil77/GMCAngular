@@ -1,0 +1,8 @@
+<p style="background-color:{{color}};">father works!</p>
+
+<app-son [background]="color"></app-son>
+
+<div style="background-color: {{childColor}};">
+<p >Dad</p>
+</div>
+<app-child (sendColorEvent)="showChildColor($event)">Child</app-child>

@@ -1,0 +1,11 @@
+<div
+   [style.background-color]= "newColor"
+>DIV</div>
+<hr>
+<input
+    #eventBindingInput 
+    (input)="getColor(eventBindingInput.value)"
+    type="text">
+<button
+  (click)="resetColor()"
+>Reset</button>
